@@ -1,0 +1,221 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: Strong;
+    src: url(./Fonts/Strong.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: Sans B;
+    src: url(./Fonts/Product\ Sans\ Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: Exclusive;
+    src: url(./Fonts/DR\ Exclusive\ Editorial.ttf) format('truetype');
+}
+
+* {
+    font-family: Sans B;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+#main {
+    width: 100%;
+    height: 100vh;
+    background: rebeccapurple;
+}
+
+.nav-container {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 10vh;
+    z-index: 99;
+}
+
+.nav-container a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 50px;
+}
+
+.nav-container img {
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top, #4C234D 50%, #1B3770);
+    position: relative;
+    z-index: 10;
+}
+.hero h1 {
+    font-family: Strong;
+    font-size: 25vw;
+    color: #fff
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 0.8;
+}
+
+.hero h2 {
+    font-family: Strong;
+    font-size: 5vw;
+    margin: 0;
+    color: #fff;
+    opacity: 0.9;
+}
+
+#fanta {
+    position: absolute;
+    width: 18%;
+    z-index: 2;
+}
+
+#uvas {
+    position: absolute;
+    width: 28%;
+    top: -15%;
+    left: 40%;
+    z-index: 2;
+}
+
+.two {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: #93C33B;
+}
+
+.left-side, .right-side {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5vh;
+    width: 50%;
+    height: 100%;
+}
+
+.left-side svg {
+    margin-top: 30vh;
+    width: 80%;
+    transform: rotateX(45deg);
+}
+
+.right-side h2 {
+    font-family: Exclusive;
+    color: #1B3770;
+    font-size: 5vw;
+}
+
+.right-side p {
+    font-family: Sans B;
+    color: #000;
+    font-size: clamp(14px, 1.2vw, 20px);
+    width: 85%;
+}
+
+.there {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150vh;
+    gap: 8vw;
+    background: linear-gradient(to top, #4C234D 50%, #1B3770);
+}
+
+.card {
+    overflow: visible;
+    position: relative;
+    display: flex;
+    background: #fff;
+    align-items: center;
+    width: 30vw;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4vh;
+    height: 80vh;
+    margin-top: 10vh;
+    border-radius: 20px;
+
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.there img {
+    width: 80%;
+}
+
+.card h3 {
+    font-family: Exclusive;
+    margin-top: 05vh;
+    font-size: 2vw;
+    color: #000;
+}
+
+.card button {
+    font-family: Sans B;
+    font-size: 1vw;
+    border-radius: 60px;
+    border: none;
+    background-color: #D58300;
+    color: #fff;
+    padding: 1vw 2vw;
+}
+
+.cocacola {
+    position: absolute;
+    top: -15%;
+    width: 80%;
+    height: -60%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.pepsi {
+    position: absolute;
+    top: -40px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    z-index: 3;
+}
+
+.lemon{
+    position: absolute;
+    top: -35%;
+    left: 50%;
+    width: 20vw;
+    transform: translate(-50%, 0%);
+}
