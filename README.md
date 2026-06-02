@@ -1,2 +1,5 @@
 # Code at dawn
-Projetos desenvolvidos na madrugada
+Projeto Fanta Uva 
+
+Animações com elementos usando GSAP
+
